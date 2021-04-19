@@ -45,7 +45,7 @@ heightEle = document.getElementById("heightEle");
 weightEle = document.getElementById("weightEle");
 trEle = document.createElement("tr");
 
-d3.csv("https://raw.githubusercontent.com/SubhalaxmiRout002/DATA-608/main/Module%205/presidents.csv", function(data) {  
+d3.csv("presidents.csv", function(data) {  
   csvValue.push(data);  
   trEle.innerHTML = '<td>' + data.Name + '</td>' + '<td>' + data.Height + '</td>' + '<td>' + data.Weight + '</td>';
   presidentsDataTable.appendChild(trEle);
